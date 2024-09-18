@@ -1,0 +1,55 @@
+/*/ every html element that holds any type of content can be a flexbox or grid container.
+/*/ most element have a display of block or inline per default.
+/*/ in flex-container we have two axis- 
+    1. main axis (horizontal)
+    2. cross axis (vertical)
+
+/*/ to position your elements along the main axis(horizontal) you need the justify-content property.
+    1. justify-content: 'flex-start'
+    2. justify-content: 'flex-end'
+    3. justify-content: 'center'
+    4. justify-content: 'space-between'
+    5. justify-content: 'space-around'
+    6. justify-content: 'space-evenly'
+
+/*/ to position your elements along the cross axis(vertical) you need the align-items property.
+    1. align-items: 'flex-start'
+    2. align-items: 'flex-end'
+    3. align-items: 'center'
+
+/*/ flex-direction property controls the direction of main axis
+    1. flex-direction: row;  (This is by default direction)
+    2. flex-direction: row-reverse;
+    3. flex-direction: column
+
+/*/ flex-wrap is use to make content inside container responsive
+    if we want to align all rows content into center so it is not enough to give justify-content:center and 
+    align-items: center. because align-items align each items by devidid each rows main axis
+    so we have to give align-content: center to align all rows by single main axis.
+
+/*/ gap property is used to make gap between these items- gap: 10px 
+/*/ we can also make gap sapratly by column and row width
+    1. column-gap: 10px;
+    2. row-gap: 10px;
+
+/*/ flex-grow and flex-shrik are two property to make elements behaviour as there parent.
+    the accept boolean value 0,1 if we want to apply in any element we can say flex-grow: 1, and if we dont 
+    want to apply we can give value 0 to that element.
+
+    also we can give higher value to one element and lower value to another like one element to 
+    flex-grow: 1; and to another element flex-shrik: 5
+    so by doing this higher value element move faster then lower value element when we are shrinking main container
+
+/*/ so a situation comes when we want to shrink  items at only spacefic width.
+    so we have to give following property to items-
+    1. flex-shrink: 1;
+    2. min-width: 100px
+
+    by doing this all items will be shrink until they reach min-width of 100px after that they stop shrinking.
+
+/*/ same as with grow property-
+    1. flex-grow: 2;
+    2. max-width: 100px;
+
+    by doing this all items grow until they reach max-width of 100px after that they stop growing.
+

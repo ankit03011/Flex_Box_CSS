@@ -1,0 +1,21 @@
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: beige;
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body{
+    display: flex;
+    border: 2px solid black;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 800px;
+}
